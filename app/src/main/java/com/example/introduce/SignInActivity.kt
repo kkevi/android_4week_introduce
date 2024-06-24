@@ -27,7 +27,8 @@ class SignInActivity : AppCompatActivity() {
                 val isEmptyPw = Toast.makeText(this, "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT)
                 isEmptyPw.show()
             } else {
-                val intent = Intent(this, SecondActivity::class.java)
+                val intent = Intent(this, HomeActivity::class.java)
+                intent.putExtra("id", idTextEditor.text.toString())
                 startActivity(intent)
             }
         }
@@ -35,11 +36,6 @@ class SignInActivity : AppCompatActivity() {
         signUpTextView.setOnClickListener{
             val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
-//            val edit_text = findViewById<EditText>(R.id.edit_data)
-//            val textData = edit_text.text.toString()
-//            val intent = Intent(this, ThirdActivity::class.java)
-//            intent.putExtra("dataFromFirstActivity", textData)
-//            startActivity(intent)
         }
     }
 

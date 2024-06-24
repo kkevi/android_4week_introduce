@@ -13,8 +13,6 @@ import androidx.appcompat.app.AppCompatActivity
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
 
-//        val textData = intent.getStringExtra("dataFromFirstActivity")
-
         val nameTextEditor = findViewById<EditText>(R.id.ev_name)
         val idTextEditor = findViewById<EditText>(R.id.ev_id)
         val pwTextEditor = findViewById<EditText>(R.id.ev_pw)
