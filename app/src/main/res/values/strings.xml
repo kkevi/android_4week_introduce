@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">Introduce me, Bora</string>
 
-    // Text를 하드코딩하지 않고 xml에 표기하는 이유는 다국어 지원 때문
-    // Device 언어 상태에 따라 자동으로 언어를 바꿔주기도 함!
+<!--    Text를 하드코딩하지 않고 xml에 표기하는 이유는 다국어 지원 때문-->
+<!--    Device 언어 상태에 따라 자동으로 언어를 바꿔주기도 함!-->
+    <string name="signIn_btn_login_text">로그인</string>
+    <string name="signIn_id_text">아이디</string>
+    <string name="signIn_pw_text">비밀번호</string>
+
 </resources>

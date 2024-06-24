@@ -19,9 +19,9 @@ class ThirdActivity : AppCompatActivity() {
 //            insets
 //        }
 
-        val textData = intent.getStringExtra("dataFromFirstActivity")
+//        val textData = intent.getStringExtra("dataFromFirstActivity")
         val editText = findViewById<EditText>(R.id.editText)
-        editText.setText(textData)
+        editText.setText("textData")
 
         val btn_close = findViewById<Button>(R.id.buttonThirdActivity)
         btn_close.setOnClickListener{

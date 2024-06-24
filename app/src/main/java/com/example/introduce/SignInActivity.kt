@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class SignInActivity : AppCompatActivity() {
@@ -14,15 +15,29 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signin)
 
+        val idTextEditor = findViewById<EditText>(R.id.ev_id)
+        val pwTextEditor = findViewById<EditText>(R.id.ev_pw)
+
         val loginButton =  findViewById<Button>(R.id.btn_login)
+        val signUpTextView = findViewById<TextView>(R.id.tv_signUp)
 
         loginButton.setOnClickListener{
-            val intent = Intent(this, SecondActivity::class.java)
-            startActivity(intent)
+            if(idTextEditor.text.isEmpty()) {
+                val isEmptyId = Toast.makeText(this, "아이디를 입력해주세요.", Toast.LENGTH_SHORT)
+                isEmptyId.show()
+            } else if(pwTextEditor.text.isEmpty()) {
+                val isEmptyPw = Toast.makeText(this, "비밀번호를 입력해주세요.", Toast.LENGTH_SHORT)
+                isEmptyPw.show()
+            } else {
+                val intent = Intent(this, SecondActivity::class.java)
+                startActivity(intent)
+
+            }
         }
 
-        val signUpTextView = findViewById<TextView>(R.id.tv_signUp)
         signUpTextView.setOnClickListener{
+            val intent = Intent(this, ThirdActivity::class.java)
+            startActivity(intent)
 //            val edit_text = findViewById<EditText>(R.id.edit_data)
 //            val textData = edit_text.text.toString()
 //            val intent = Intent(this, ThirdActivity::class.java)
