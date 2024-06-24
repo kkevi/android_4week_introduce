@@ -41,10 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/signIn_id_text"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/ev_id"
@@ -68,10 +65,7 @@
                 android:layout_height="wrap_content"
                 android:text="@string/signIn_pw_text"
                 android:textSize="14sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/ev_pw"

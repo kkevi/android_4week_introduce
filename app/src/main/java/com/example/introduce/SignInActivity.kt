@@ -1,9 +1,7 @@
 package com.example.introduce
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -36,7 +34,7 @@ class SignInActivity : AppCompatActivity() {
         }
 
         signUpTextView.setOnClickListener{
-            val intent = Intent(this, ThirdActivity::class.java)
+            val intent = Intent(this, SignUpActivity::class.java)
             startActivity(intent)
 //            val edit_text = findViewById<EditText>(R.id.edit_data)
 //            val textData = edit_text.text.toString()
